@@ -12,9 +12,9 @@ import java.util.List;
 public class CityMap {
     private int[][] grid;
     private List<Ride> rideList = new ArrayList<>();
+    private List<Car> carList = new ArrayList<>();
 
     private int vehicleAmount;
-    private int rideAmount;
     private int bonuspoints;
     private int steps;
 
@@ -28,7 +28,9 @@ public class CityMap {
                     String[] mapInfo = currentLine.split(" ");
                     this.grid = new int[Integer.parseInt(mapInfo[0])][Integer.parseInt(mapInfo[1])];
                     this.vehicleAmount = Integer.parseInt(mapInfo[2]);
-                    this.rideAmount = Integer.parseInt(mapInfo[3]);
+                    for (int i = 0; i < Integer.parseInt(mapInfo[2]); i++) {
+                        this.carList.add(new Car());
+                    }
                     this.bonuspoints = Integer.parseInt(mapInfo[4]);
                     this.steps = Integer.parseInt(mapInfo[5]);
                     firstLine = false;
@@ -36,7 +38,7 @@ public class CityMap {
                     String[] rideInfo = currentLine.split(" ");
                     Ride ride = new Ride(Integer.parseInt(rideInfo[0]), Integer.parseInt(rideInfo[1]),
                             Integer.parseInt(rideInfo[2]), Integer.parseInt(rideInfo[3]), Integer.parseInt(rideInfo[4]),
-                            Integer.parseInt(rideInfo[5]), false);
+                            Integer.parseInt(rideInfo[5]), false, false);
                     this.rideList.add(ride);
                 }
             }

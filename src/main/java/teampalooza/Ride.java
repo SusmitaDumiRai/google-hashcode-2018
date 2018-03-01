@@ -12,6 +12,7 @@ public class Ride {
     private int destinationY;
     private int earliestStartStep;
     private int latestFinishStep;
-    private boolean occupied;
+    private boolean assigned;
+    private boolean completed;
 
 }
