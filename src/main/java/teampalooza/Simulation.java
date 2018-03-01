@@ -11,7 +11,7 @@ public class Simulation {
         for (int i = 0; i < cityMap.getSteps(); i++) {
             assignRides();
             for (Car c : this.cityMap.getCarList()) {
-                if (c.getCurrentRide().getEarliestStartStep() >= i) {
+                if (i >= c.getCurrentRide().getEarliestStartStep()) {
                     if (c.getJourneyTime() != 0) {
                         c.setJourneyTime();
                     } else {
