@@ -32,6 +32,7 @@ public class Simulation {
                     c.setAmountOfRides();
                     r.setAssigned(true);
                     c.setOccupied(true);
+                    c.getIdsOfRides().add(r.getActualId());
                 }
             }
         }
@@ -39,7 +40,11 @@ public class Simulation {
 
     public void printOutput() {
         for (Car c : this.cityMap.getCarList()) {
-            System.out.println(c.getAmountOfRides());
+            StringBuilder a = new StringBuilder(c.getAmountOfRides() + "");
+            for(Integer i : c.getIdsOfRides()) {
+                a.append(" ").append(i);
+            }
+            System.out.println(a);
         }
     }
 }

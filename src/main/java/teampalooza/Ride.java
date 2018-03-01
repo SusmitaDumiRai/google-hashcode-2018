@@ -1,10 +1,8 @@
 package teampalooza;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class Ride {
     private int startX;
     private int startY;
@@ -14,5 +12,21 @@ public class Ride {
     private int latestFinishStep;
     private boolean assigned;
     private boolean completed;
+    private int actualId;
+    static int id = -1;
 
+    public Ride(int startX, int startY, int destinationX, int destinationY, int earliestStartStep, int latestFinishStep, boolean assigned, boolean completed) {
+        this.startX = startX;
+        this.startY = startY;
+        this.destinationX = destinationX;
+        this.destinationY = destinationY;
+        this.earliestStartStep = earliestStartStep;
+        this.latestFinishStep = latestFinishStep;
+        this.assigned = assigned;
+        this.completed = completed;
+
+
+        id++;
+        this.actualId = id;
+    }
 }

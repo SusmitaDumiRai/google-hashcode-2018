@@ -3,6 +3,9 @@ package teampalooza;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 public class Car {
@@ -12,6 +15,7 @@ public class Car {
     private int amountOfRides;
     private boolean occupied = false;
     private int journeyTime;
+    private List<Integer> idsOfRides = new ArrayList<>();
 
     public int pickUp() {
 
