@@ -4,7 +4,7 @@ public class App {
 
     public static void main(String[] args) {
         CityMap cityMap = new CityMap();
-        cityMap.loadMapFromFile("d_metropolis.in");
+        cityMap.loadMapFromFile("e_high_bonus.in");
 
         Simulation simulation = new Simulation(cityMap);
         long startTime = System.currentTimeMillis();
@@ -15,6 +15,10 @@ public class App {
 
         simulation.printOutput();
     }
+
+
+
+
 
 
 }
