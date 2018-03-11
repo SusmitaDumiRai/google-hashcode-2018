@@ -3,7 +3,7 @@ package teampalooza;
 public class Simulation {
     private CityMap cityMap;
 
-    public Simulation(CityMap cityMap) {
+    Simulation(CityMap cityMap) {
         this.cityMap = cityMap;
     }
 

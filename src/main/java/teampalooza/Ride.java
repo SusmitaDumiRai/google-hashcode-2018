@@ -3,7 +3,7 @@ package teampalooza;
 import lombok.Data;
 
 @Data
-public class Ride {
+class Ride {
     private int startX;
     private int startY;
     private int destinationX;
@@ -15,7 +15,7 @@ public class Ride {
     private int actualId;
     static int id = -1;
 
-    public Ride(int startX, int startY, int destinationX, int destinationY, int earliestStartStep, int latestFinishStep, boolean assigned, boolean completed) {
+    Ride(int startX, int startY, int destinationX, int destinationY, int earliestStartStep, int latestFinishStep, boolean assigned, boolean completed) {
         this.startX = startX;
         this.startY = startY;
         this.destinationX = destinationX;

@@ -17,7 +17,7 @@ public class Car {
     private int journeyTime;
     private List<Integer> idsOfRides = new ArrayList<>();
 
-    public int pickUp() {
+    private int pickUp() {
 
         int result = ((Math.abs(this.currentLocationX - this.currentRide.getStartX()))
                 + (Math.abs(this.currentLocationY - this.currentRide.getStartY())));
@@ -26,7 +26,7 @@ public class Car {
         return result;
     }
 
-    public int dropOff() {
+    private int dropOff() {
         int result = ((Math.abs(this.currentLocationX - this.currentRide.getDestinationX()))
                 + (Math.abs(this.currentLocationY - this.currentRide.getDestinationY())));
         this.currentLocationX = this.currentRide.getDestinationX();

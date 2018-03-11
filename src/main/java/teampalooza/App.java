@@ -4,21 +4,13 @@ public class App {
 
     public static void main(String[] args) {
         CityMap cityMap = new CityMap();
-        cityMap.loadMapFromFile("e_high_bonus.in");
+        cityMap.loadMapFromFile("examples/a_example.in");
 
         Simulation simulation = new Simulation(cityMap);
-        long startTime = System.currentTimeMillis();
         simulation.start();
-        long endTime = System.currentTimeMillis();
-
-        System.out.println("Overall run time :" + (endTime - startTime));
 
         simulation.printOutput();
     }
-
-
-
-
 
 
 }
