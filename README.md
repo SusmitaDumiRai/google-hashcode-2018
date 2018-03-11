@@ -5,7 +5,7 @@ Hash Code is a team programming competition organized by Google for students and
 
 [Click here to see the assignment](online_qualification_round_2018.pdf)
 
-### Who is in Team Palooza??
+### Who is in Team Palooza?
 The following members are part of this team:
 - [Sander de Jong](https://github.com/sanderdejong)
 - [Susmita Rai](https://github.com/SusmitaDumiRai)
