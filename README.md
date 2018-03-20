@@ -9,3 +9,7 @@ Hash Code is a team programming competition organized by Google for students and
 The following members are part of this team:
 - [Sander de Jong](https://github.com/sanderdejong)
 - [Susmita Rai](https://github.com/SusmitaDumiRai)
+
+
+### Results
+Our final score was 0 points. We ended up solving the problem 5 minutes after the deadline. In the extended round we handed in all of our outputs and our final score was 11.769.986 points. 
